@@ -70,11 +70,12 @@ h3 {
 }
 
 nav {
-	max-width: calc(100vw - 40px);
-	margin: 0 20px;
+	width: 90vw;
 	padding-top: 10px;
 	position: sticky;
+	text-align: center;
 	top: 0;
+	margin: 0 auto;
 	background: white;
 }
 
@@ -82,7 +83,6 @@ nav > a {
 	font-size: 3vmin;
 	font-weight: bold;
 	padding:10px 0 0 0;
-	margin: 0 5px;
 	color: #003366;
 	cursor:pointer;
 }
@@ -101,7 +101,7 @@ section {
 
 .page-main-advantage {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(220px, auto));
+	grid-template-columns: repeat(auto-fill, minmax(250px, auto));
 	grid-gap: 2vmin;
 	margin-top: 4vmin;
 }
@@ -116,10 +116,6 @@ section {
 	padding:10px 0px;
 }
 
-.page-main-advantage > div p {
-	padding: 0 0 0 0;
-	margin: 0 0;
-}
 
 @media (max-width:530px) {
 	.page-main-advantage > div i {
@@ -129,5 +125,12 @@ section {
 
 	.page-main-advantage > div p {
 		text-align: left;
+	}
+}
+
+@media (max-width:480px) {
+	section, header, body {
+		width: 100%;
+		max-width: 300px;
 	}
 }
