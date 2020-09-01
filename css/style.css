@@ -1,0 +1,135 @@
+.material-icon {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10vmin;
+	color: #3399CC;
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased; /* Поддержка всеми WebKit браузерами */
+	text-rendering: optimizeLegibility; /* Поддержка Safari и Chrome */
+	-moz-osx-font-smoothing: grayscale;  /* Поддержка Firefox. */
+	font-feature-settings: 'liga'; /* Поддержка IE. */
+}
+
+@font-face {
+	font-family: 'Jetbrains';
+	src: url('../fonts/eot/JetBrainsMono-Regular.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/eot/JetBrainsMono-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/woff2/JetBrainsMono-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/woff/JetBrainsMono-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+	url('../fonts/ttf/JetBrainsMono-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'Jetbrains-bold';
+	src: url('../fonts/eot/JetBrainsMono-Bold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/eot/JetBrainsMono-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/woff2/JetBrainsMono-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/woff/JetBrainsMono-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+	url('../fonts/ttf/JetBrainsMono-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 480px;
+	align-items: center;
+	font-family: sans-serif;
+	background: #fff;
+	font-size: 2.8vmin;
+	color:#565a5c;
+	text-align: center;
+}
+
+h1,h2,h3 {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Jetbrains-bold', Fallback, sans-serif;
+	font-size: 4.5vmin;
+	padding-top: 20px;
+}
+
+h2 {
+	font-family: 'Jetbrains', Fallback, sans-serif;
+	font-size: 4vmin;
+	color: #003366;
+}
+
+h3 {
+	font-family: 'Jetbrains', Fallback, sans-serif;
+	font-size: 3.5vmin;
+}
+
+nav {
+	width: 100%;
+	margin: 0 10px;
+	position: sticky;
+	top: 0;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	background: white;
+	border-bottom: 1px dotted #565a5c;
+}
+
+nav > a {
+	font-size: 16px;
+	font-weight: bold;
+	padding:10px 0 0 0;
+	margin: 0 5px;
+	color: #003366;
+	cursor:pointer;
+}
+
+ul, ol {
+	text-align: left;
+}
+
+section {
+	width: 780px;
+	max-width: calc(100vw - 120px);
+	margin: 10px auto;
+	padding: 20px 20px;
+	display: inline-block;
+}
+
+.page-main-advantage {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, auto));
+	grid-gap: 2vmin;
+	margin-top: 4vmin;
+}
+.page-main-advantage > div {
+	padding: 10px 20px 20px 20px;
+	border: 1px #565a5c dotted;
+	text-align: center;
+	background: white;
+}
+
+.page-main-advantage > div h3 {
+	padding:10px 0px;
+}
+
+.page-main-advantage > div p {
+	padding: 0 0 0 0;
+	margin: 0 0;
+}
+
+@media (max-width:530px) {
+	.page-main-advantage > div i {
+		float: left;
+		margin-right: 10px;
+	}
+
+	.page-main-advantage > div p {
+		text-align: left;
+	}
+}
