@@ -38,7 +38,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	min-width: 480px;
 	align-items: center;
 	font-family: sans-serif;
 	background: #fff;
@@ -70,7 +69,6 @@ h3 {
 }
 
 nav {
-	width: 90vw;
 	padding-top: 10px;
 	position: sticky;
 	text-align: center;
@@ -129,8 +127,18 @@ section {
 }
 
 @media (max-width:480px) {
+	nav {
+		padding-top: 20px;
+	}
+
+	nav > a {
+		font-size: 12px;
+		font-weight: bold;
+		padding:10px 0 0 0;
+		color: #003366;
+		cursor:pointer;
+	}
 	section, header, body {
 		width: 100%;
-		max-width: 300px;
 	}
 }
