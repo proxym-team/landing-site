@@ -1,0 +1,23 @@
+{
+  "name": "proxym",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proxym-team/landing-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/proxym-team/landing-site/issues"
+  },
+  "homepage": "https://github.com/proxym-team/landing-site#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
